@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissors</title>
+    <link rel="stylesheet" href="sps.css">
+</head>
+<body>
+    <h3 id="heading" class="text">Stone Paper Scissors</h3>
+    <p class="text">Choose one</p>
+    <div align="center">
+        <button id="stone" class="option"><img src="stone.png" alt="Stone" class="img"></button>
+        <button id="paper" class="option"><img src="paper.png" alt="Paper" class="img" ></button>
+        <button id="scissors" class="option"><img src="scissors.png" alt="Scissors" class="img"></button>
+    </div>
+    <div>
+        <p id="CompTurn" class="text"></p>
+    </div>
+    <div>
+        <h3 id="result" class="text"></h3>
+        <div id="scoreDiv"><p style="font-size: 30px;">
+            SCORE :     </p>  <p id="score" class="text"></p>
+        <button id="resetButton" class="option"><img src="reload.png" alt="Reset" class="img" id="resetImg"></button>
+        </div>
+    </div>
+
+    <script src="sps.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> IIITN Metro</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <h2>Metro Service</h2>
+    <p>Please select your tickets</p>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Women</th>
+        </tr>
+        <tr>
+            <td>Babies (Age 0-5)</td>
+            <td><button class="minus" id="babyMinus">-</button> <span id="babyCount">0</span> <button class="plus" id="babyPlus">+</button><br></td>
+            <td><button class="minus" id="babyWMinus">-</button> <span id="babyWCount">0</span> <button class="plus" id="babyWPlus">+</button><br></td>
+        </tr>
+        <tr>
+            <td>Children (Age 6-12)</td>
+            <td><button class="minus" id="childMinus">-</button> <span id="childrenCount">0</span> <button class="plus" id="childPlus">+</button><br></td>
+            <td><button class="minus" id="childWMinus">-</button> <span id="childWCount">0</span> <button class="plus" id="childWPlus">+</button><br></td>
+        </tr>
+        <tr>
+            <td>Adults (Age 13-65)</td>
+            <td><button class="minus" id="adultMinus">-</button> <span id="adultsCount">0</span> <button class="plus" id="adultPlus">+</button><br></td>
+            <td><button class="minus" id="adultWMinus">-</button> <span id="adultsWCount">0</span> <button class="plus" id="adultWPlus">+</button><br></td>
+        </tr>
+        <tr>
+            <td>Seniors (Age 66+)</td>
+            <td><button class="minus" id="seniorMinus">-</button> <span id="seniorsCount">0</span> <button class="plus" id="seniorPlus">+</button><br></td>
+            <td><button class="minus" id="seniorWMinus">-</button> <span id="seniorWCount">0</span> <button class="plus" id="seniorWPlus">+</button><br></td>
+        </tr>
+    </table>
+
+    <br><br><br><button type="submit" onclick="showTicket()">Pay</button><br>
+    Total Price: <span id="totalPrice"></span>
+    <script src="page.js"></script>
+</body>
+</html>

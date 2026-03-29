@@ -1,0 +1,118 @@
+console.log()
+alert()
+console.warn()
+console.error()
+console.clear()
+
+
+JSON
+____________________________________________________
+JSON.parse(string)
+JSON.stringify(object)
+
+
+DOM
+____________________________________________________
+document.
+    getElementById('id')
+    getElementsByClassName('class')
+    querySelector('selector')
+
+        .innerHTML
+        .innerText
+        .value
+        .classList.add('class') / .classList.remove('class') -- adds or removes class
+        document.createElement('tag')
+        .appendChild(element) -- adds child to parent
+        .remove() or removeChild()
+
+
+Variable 
+____________________________________________________
+let
+const
+var
+typeof variable
+
+
+Math
+____________________________________________________
+Math.random()
+Math.round()
+Math.ceil()
+eval('string') -- evaluates the value of string
+
+
+LocalStorage
+____________________________________________________
+localStorage.setItem('key', 'item')
+localStorage.getItem('key')
+localStorage.clear()
+
+
+Time
+____________________________________________________
+new Date()
+    .getFullYear()
+    .getHours()
+    ,getMinutes()
+
+
+Function
+____________________________________________________
+function name(){  }
+let x=function(){  }
+let x=()=>{  }
+
+
+element.addEventListener('click', functionName)
+element.addEventListener('click', function(){  })
+
+event.type = >
+    hover
+    fullscreenchange
+    click
+    and many more( https://developer.mozilla.org/en-US/docs/Web/API/Event/type )
+
+
+LOOP: 
+____________________________________________________
+    for -- while -- do..while
+    forEach -- arr.forEach(function(args))
+            -- arr.forEach((args) => { })
+
+
+Array
+____________________________________________________
+let array =[]
+    .pop
+    .push
+    .shift
+    .unshift
+    .splice(index, count)
+    .slice() -- copies part of array
+    .sort()
+    .forEach(callback)
+    .map(callback)
+    .filter(callback)
+
+Array Methods
+    .filter(function) --- filters acc to given function
+    .map(function) --- maps values to values returned by given function
+    
+
+Timers
+____________________________________________________
+setTimeout(function, delay) ... runs function once after timeout
+setInterval(function, delay) ... runs fuction at given intervals
+clearTimeout(id) / clearInterval(id)
+
+Anonymous Functions
+____________________________________________________
+
+let sum= function(par1, par2){};
+let newSum=sum;
+newSum(4,5) ---works
+
+let sum = (par1, par2) =>{} --works
+..for single parameter no bracket needed and for single statement in function no return needed
